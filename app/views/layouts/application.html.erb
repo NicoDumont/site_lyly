@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>SiteLyly</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
 
-<%= yield %>
+  <head>
+    <title><%= titre %></title>
+    <%= csrf_meta_tag %>
+	<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->    
+    <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
+    <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
+    <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
+    <%= stylesheet_link_tag 'custom', :media => 'screen' %>
+  </head>
 
-</body>
+  <body>
+    <div class="container">
+      
+      <header>
+      	<%= image_tag("logo.png", :alt => "Lysiane Rakotoson - Le diffuseur poétique", :class => "round") %>
+          <nav class="round">
+          <ul>
+            <li><%= link_to "Accueil", root_path %></li>
+            <li><%= link_to "Voix", '#' %></li>
+            <li><%= link_to "Voies", '#' %></li>
+            <li><%= link_to "Pollens", '#' %></li>
+            <li><%= link_to "Neige", neige_path %></li>
+          </ul>
+        </nav>
+      </header>
+      
+      <section class="round">
+        <%= yield %>
+      </section>
+      
+      <footer>
+  		<nav class="round">
+    	  <ul>
+      		<li><%= link_to "A propos de l'auteur", auteur_path %></li>
+      		<li><%= link_to "Contact", '#' %></li>
+      		<li><a href="http://lysianerakotoson.blogspot.fr/">Le diffuseur poétique</a></li>
+   		 </ul>
+  		</nav>
+	  </footer>
+    
+    </div>
+  </body>
+
 </html>
+
