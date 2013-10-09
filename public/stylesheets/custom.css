@@ -31,16 +31,9 @@ section h1 {
   text-align: left;
 }
 
-section p0 {
+section p {
   background: #19191A;  
-}
-
-section p1 {
-  float: left;
   margin-left: 30px;
-}
-
-section p2 {
   float: none;
   text-align: left;
 }

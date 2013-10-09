@@ -3,7 +3,9 @@ SiteLyly::Application.routes.draw do
   root :to => 'pages#Acceuil'
 
   get '/auteur',  :to => "pages#Auteur"
-  get '/neige',   :to => "pages#Neige"
+  get '/neige_coureuse',   :to => "pages#Neige-coureuse"
+  get '/neige_froid',   :to => "pages#Neige-froid"
+  get '/neige_assise',   :to => "pages#Neige-assise"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
