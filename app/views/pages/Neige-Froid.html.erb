@@ -1,13 +1,23 @@
-<h1><%= @titre %></h1>
+<h1><b>Une neige et des baisers exacts</b></h1>
 
-<p0>
+<p>
 
-
-<p1><br><br><%= image_tag("image_receuil.jpg", :alt => "image du receuil manquante", :class => "round") %><br> </p1>
-
-<p2><br><br><br><br><i>« Sois une coureuse de lumière, <br> éprouve ta chanson jusqu’au fond du ventre »,<br> me disais-je.<br> Aussi je conquiers chaque heure<br> Et je moissonne mes labours:<br> Ton visage en enfilade – variable<br>J’accompagne la terre et sa leçon de pénombre..  </i><br><br>
-
-<a href="http://www.amazon.fr/neige-baisers-exacts-Lysiane-Rakotoson/dp/2841161641/"><b><u>En vente sur amazon</b></u></a></p2>
-
-<br><br><br><br><br><br><br><br><br><br> 
-</p0>
+    <TABLE> <TR >
+     <TD> <a href="http://www.amazon.fr/neige-baisers-exacts-Lysiane-Rakotoson/dp/2841161641/" target="_blank"><%= image_tag("image_receuil.jpg", :alt => "image du receuil manquante", :width => "270") %></a>
+     <TD> <%= image_tag("play.jpg") %><a href ="http://www.youtube.com" class ="button">Lecture: Lysiane Rakotoson</a>
+        <br><br>
+    Le froid dessine chaque nerf chaque veine <br>
+    dessille les yeux <br>
+    épaissi encore un peu le pourpre <br>
+    des lèvres:<br>
+    lucidité de la peau.<br>
+    Les organes pelotonnés dans le ventre, <br>
+    tout à coup vifs dans le vent - <br>
+    J'ai les mains retroussées contre l'aine, le sang <br>
+    surchargé de marches sans ciels - la gorge <br>
+    hérissée d'un mot d'amour. <br> <br>
+     <TABLE> <TR>
+     <TD><%= link_to "Extrait précédent", 'neige_coureuse', :class => "button" %>
+     <TD><%= link_to "Extrait suivant", 'neige_assise', :class => "button" %>
+     </TABLE> 
+    </TABLE> 
