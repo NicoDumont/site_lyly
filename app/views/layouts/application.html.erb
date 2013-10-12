@@ -2,14 +2,10 @@
 <html>
 
   <head>
-    <title><%= titre %></title>
+    <title>Site de Lysiane Rakotoson | Une neige et des baisers exacts</title>
     <%= csrf_meta_tag %>
-	<!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->    
     <%= stylesheet_link_tag 'blueprint/screen', :media => 'screen' %>
     <%= stylesheet_link_tag 'blueprint/print',  :media => 'print' %>
-    <!--[if lt IE 8]><%= stylesheet_link_tag 'blueprint/ie' %><![endif]-->
     <%= stylesheet_link_tag 'custom', :media => 'screen' %>
   </head>
 
@@ -17,30 +13,30 @@
     <div class="container">
       
       <header>
-      	<%= image_tag("logo.png", :alt => "Lysiane Rakotoson - Le diffuseur poétique", :class => "round") %>
           <nav class="round">
+          <a>Je tente ma chance:</a>
           <ul>
-            <li><%= link_to "Accueil", root_path %></li>
-            <li><%= link_to "Voix", '#' %></li>
-            <li><%= link_to "Voies", '#' %></li>
-            <li><%= link_to "Pollens", '#' %></li>
-            <li><%= link_to "Neige", neige_coureuse_path %></li>
+            <li><%= link_to "Grandes Voix", "http://www.youtube.com/watch?v=ahb531cyg8g", :target => "_blank" %></li>
+            <li><%= link_to "Grandes Voies", "http://www.les-souffleurs.fr/", :target => "_blank"%></li>
+            <li><%= link_to "Pollens", "http://lysianerakotoson.blogspot.fr/p/pollens.html", :target => "_blank" %></li>
           </ul>
-        </nav>
+          </nav>
       </header>
       
       <section class="round">
-        <%= yield %>
+          <%= yield %>
+          <P align="center"> <%= image_tag("reseaux_sociaux.jpg") %>
       </section>
       
       <footer>
-  		<nav class="round">
-    	  <ul>
-      		<li><%= link_to "A propos de l'auteur", auteur_path %></li>
-      		<li><a href="http://lysianerakotoson.blogspot.fr/"><%= image_tag("blogspot.jpg", ) %>Le diffuseur poétique</a></li>
-   		 </ul>
-  		</nav>
-	  </footer>
+  		    <nav class="round">
+    	    <ul>
+      		  <li><a href ="http://lysianerakotoson.blogspot.fr/p/propos-de-ce-blog.html" target="_blank"> A propos de l'auteur</a></li>
+            <li><a href ="http://www.cheyne-editeur.com/vocation/rakotoson.html" target="_blank"> Cheyne éditeur</a></li>
+      		  <li><a href="http://lysianerakotoson.blogspot.fr/" target="_blank"> Blog - Le diffuseur poétique</a></li>
+   		    </ul>
+  		    </nav>
+	    </footer>
     
     </div>
   </body>

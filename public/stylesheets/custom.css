@@ -1,106 +1,82 @@
 .container {
+  float: center;
   width: 710px;
-  margin-left: 80px;
 }
-body {
-  background: black;
-}
-
-header {
-  padding-top: 20px;
-  font-weight: bold;
-}
-
-header img {
-  padding: 1em;
-  background: #19191A;
-  color: white;
-}
-
-section {
-  margin-top: 1.5em;
-  font-size: 100%;
-  padding: 5px;
-  background: #19191A;
-  text-align: center;
-  color: white;
-}
-
-section h1 {
-  font-size: 150%;
-  text-align: left;
-}
-
-section p {
-  background: #19191A;  
-  margin-left: 30px;
-  float: none;
-  text-align: left;
-}
-
-/* liens */
-a {
-  color: white;
-  text-decoration: none;
-}
-a:hover {
-  color: white;
-  text-decoration: underline;
-}
-a:visited {
-  color: white;
-}
-
-/* Navigation - boite en haut à droite*/
-nav {
-  float: right;
-  background-color: #19191A;
-  padding: 0 0.7em;
-  white-space: nowrap;
-}
-nav ul {
-  margin: 0;
-  padding: 0;
-  color: white;
-}
-nav ul li {
-  list-style-type: none;
-  display: inline-block;
-  padding: 0.2em 0;
-  color: white;
-}
-nav ul li a {
-  padding: 0 5px;
-  font-weight: bold;
-  color: white;
-}
-nav ul li a:visited {
-  color: white;
-}
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-/* footer - boite du bas */
-
-footer {
-  text-align: center;
-  margin-top: 10px;
-  width: 710px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: bold;
-  color: white;
-}
-footer nav {
-  float: none;
-}
-
-
-/* Coins arrondis */
 
 .round {
   -moz-border-radius:    10px;
   -webkit-border-radius: 10px;
   border-radius:         10px;
+}
+
+body {
+  background: black;
+  font-family: verdana,sans-serif;
+}
+
+header {
+  margin-top: 20px;
+  float: right;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+section {
+  padding-top: 80px;
+  color: black;
+  }
+
+section:hover {
+  color: white;
+  transition-property: color;
+  transition-duration: 10s;
+  transition-timing-fonction: linear;
+  animation-iteration-count: 1;   
+}
+
+section h1 {
+  border-bottom:1px dashed white;
+  font-size: 150%;
+  color: white;
+}
+
+nav {
+  background-color: #19191A;
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: sandybrown;   
+  text-decoration: underline;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 15px;
+}
+
+a.button {
+  text-align: center;
+  display: block;
+  padding: 8px;
+  font-size: 100%;
+  font-weight: normal;
+  margin:2px;
+  background-color: #19191A;
+  border:1px groove white;
+}
+
+a.button:hover {
+  background-color: #19191A;
+  border:1px groove sandybrown;
+  color: sandybrown;
+  text-decoration: none;
 }

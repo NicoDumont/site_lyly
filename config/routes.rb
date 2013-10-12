@@ -1,8 +1,7 @@
 SiteLyly::Application.routes.draw do
 
-  root :to => 'pages#Acceuil'
+  root :to => 'pages#Neige-coureuse'
 
-  get '/auteur',  :to => "pages#Auteur"
   get '/neige_coureuse',   :to => "pages#Neige-coureuse"
   get '/neige_froid',   :to => "pages#Neige-froid"
   get '/neige_assise',   :to => "pages#Neige-assise"

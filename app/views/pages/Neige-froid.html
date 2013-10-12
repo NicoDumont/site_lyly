@@ -1,34 +1,24 @@
-<h1><%= @titre %></h1>
+<h1><b>Une neige et des baisers exacts</b></h1>
 
 <p>
 
-	 <TABLE border="1" width="600" align ="center" frame="void" rules="none"> 
-        <TR> 
-
-            <TD width="300"> 
-     <%= image_tag("image_receuil.jpg", :alt => "image du receuil manquante" )%>
-      
-            <TD width="300">
-
-	<a href= "neige_coureuse">Extrait précédent</a> <br>
-	<br>
- 	Le froid dessine <br> 
-	chaque nerf <br>
-	chaque veine <br>
+    <TABLE> <TR >
+     <TD> <a href="http://www.amazon.fr/neige-baisers-exacts-Lysiane-Rakotoson/dp/2841161641/" target="_blank"><%= image_tag("image_receuil.jpg", :alt => "image du receuil manquante", :width => "270") %></a>
+     <TD> <%= image_tag("play.jpg") %><a href ="http://www.youtube.com" class ="button">Lecture: Lysiane Rakotoson</a>
+     	<br><br>
+ 	Le froid dessine chaque nerf chaque veine <br>
 	dessille les yeux <br>
 	épaissi encore un peu le pourpre <br>
 	des lèvres:<br>
 	lucidité de la peau.<br>
-	<br>
 	Les organes pelotonnés dans le ventre, <br>
 	tout à coup vifs dans le vent - <br>
 	J'ai les mains retroussées contre l'aine, le sang <br>
 	surchargé de marches sans ciels - la gorge <br>
-	hérissée d'un mot d'amour. <br> 
-	<br> 
-	<%= image_tag("play.jpg", :alt => "image du bouton play manquante", )%> <br>
-	<a href= "neige_assise">Extrait suivant</a> 
-
+	hérissée d'un mot d'amour. <br> <br>
+     <TABLE> <TR>
+     <TD><%= link_to "Extrait précédent", 'neige_coureuse', :class => "button" %>
+     <TD><%= link_to "Extrait suivant", 'neige_assise', :class => "button" %>
+     </TABLE> 
     </TABLE> 
 
-	<a href="http://www.amazon.fr/neige-baisers-exacts-Lysiane-Rakotoson/dp/2841161641/"><b><u>En vente sur amazon</b></u></a>
